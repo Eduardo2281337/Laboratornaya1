@@ -12,7 +12,7 @@ public:
     RegistrySingleton() {}
     RegistrySingleton(RegistrySingleton& other) = delete;
     void operator=(const RegistrySingleton& cr) = delete;
-    static RegistrySingleton& getInstance(const QList<Company* >& cl);
+    static RegistrySingleton& getInstance();
     void AddCompany(Company& c);
     Company* getCompanyByIndex(int index) const;
     int getRegistrySize() const;

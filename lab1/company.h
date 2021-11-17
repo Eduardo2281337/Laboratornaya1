@@ -13,7 +13,7 @@ private:
     int numberOfEmployees_;
 public:
     Company(QString &name, QVector<QString> &owners, double income = 0, double area = 0, int numOfEmps = 0);
-    enum type { Private, Multinational, Government };
+    enum type { Private, Government,  Public };
     virtual type getCompanyType() = 0;
     virtual double getTaxPerMonth() = 0;
     QString getCompanyName() const { return name_; }

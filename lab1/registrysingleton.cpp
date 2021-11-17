@@ -1,7 +1,7 @@
 #include "registrysingleton.h"
 
 
-RegistrySingleton& RegistrySingleton::getInstance(const QList<Company* >& cl)
+RegistrySingleton& RegistrySingleton::getInstance()
 {
     static RegistrySingleton instance;
     return instance;

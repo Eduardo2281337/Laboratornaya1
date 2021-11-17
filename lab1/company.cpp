@@ -31,7 +31,7 @@ PublicCompany::PublicCompany(QString &name, QVector<QString> &owners,
 
 Company::type PublicCompany::getCompanyType()
 {
-    return type::Multinational;
+    return type::Public;
 }
 
 double PublicCompany::getTaxPerMonth()
