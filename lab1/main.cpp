@@ -9,8 +9,8 @@ void getInfoByType(Company::type tp, RegistrySingleton& cr, QTextStream& out)
     case Company::type::Private:
         out << "Private companies: " << Qt::endl;
         break;
-    case Company::type::Multinational:
-        out << "Multinational companies: " << Qt::endl;
+    case Company::type::Public:
+        out << "Public companies: " << Qt::endl;
         break;
     case Company::type::Government:
         out << "Government companies: " << Qt::endl;
@@ -113,7 +113,6 @@ int main(int argc, char *argv[])
     getInfoByType(Company::type::Government, cr, out);
     out << Qt::endl;
     // 2. Вывести в консоль все предприятия, принадлежащие определённому владельцу.
-    out << Qt::endl;
     getCompaniesByOwner(QString::fromUtf8("Igor Sechin"), cr, out);
     // 3. Вывести в консоль средние показатели (доход, площадь, число сотрудников) предприятий для каждого из типов.
     out << Qt::endl;
