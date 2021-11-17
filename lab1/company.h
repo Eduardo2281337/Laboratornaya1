@@ -24,5 +24,34 @@ public:
     virtual ~Company() {}
 };
 
+class PrivateCompany : public Company
+{
+public:
+    PrivateCompany(QString &name, QVector<QString> &owners,
+                   double income = 0, double area = 0, int numberOfEmployees = 0);
+    type getCompanyType();
+    double getTaxPerMonth();
+};
+
+class GovernmentCompany : public Company
+{
+public:
+    GovernmentCompany(QString &name, QVector<QString> &owners,
+                     double income = 0, double area = 0, int numberOfEmployees = 0);
+    type getCompanyType();
+    double getTaxPerMonth();
+};
+
+class PublicCompany : public Company
+{
+public:
+    PublicCompany(QString &name, QVector<QString> &owners,
+                   double income = 0, double area = 0, int numberOfEmployees = 0);
+    type getCompanyType();
+    double getTaxPerMonth();
+};
+
+
+
 
 #endif // COMPANY_H
